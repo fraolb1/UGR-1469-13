@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/css/review.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,7 @@
                 <img src="/images/logo_file_06.jpg" title="our logo" alt="man traveling" width="100px" height="100px">
             </div>
             <nav class="navigation-bar">
-                <ul>
+                <ul class="nav-links">
                     <li title="home-page"> <a href="/home.html">Home</a> </li>
                     <li title="book-page"><a href="/book.html">Book</a></li>
                     <li title="package-page"><a href="/package.html">Package</a></li>
@@ -26,51 +27,69 @@
                     <li title="about-page"><a href="/About-us.html">About Us</a></li>
                 </ul>
             </nav>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>  
     </header>
     <main>
-        <div class="container">
-            <button class="pointer">Prev</button>
-            <div class="card" title="review">
-                <div class="profile" >
-                    <img src="/images/pexels-photo-220453.webp" title="reviewer picture" alt="first profile picture" width="100px" height="100px" >
-                    <h2 title="reviewer name">john doe</h2>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="card" title="review">
+                    <div class="profile" >
+                        <img src="/images/pexels-photo-220453.webp" title="reviewer picture" alt="first profile picture" width="100px" height="100px" >
+                        <h2 title="reviewer name">john doe</h2>
+                    </div>
+                    <i title="Rating">&#9733 &#9733 &#9733 &#9733 &#9734</i>
+                    <p title="the-review">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                         Odio quo asperiores rerum quos expedita maiores tenetur quod,
+                         cupiditate enim aut corporis atque nulla in est iste. Excepturi 
+                         corporis voluptate voluptates?
+                    </p>
                 </div>
-                <i title="Rating">&#9733 &#9733 &#9733 &#9733 &#9734</i>
-                <p title="the-review">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                     Odio quo asperiores rerum quos expedita maiores tenetur quod,
-                     cupiditate enim aut corporis atque nulla in est iste. Excepturi 
-                     corporis voluptate voluptates?
-                </p>
+    
             </div>
-            <div class="card">
-                <div class="profile">
-                    <img src="/images/cool-profile-pic-matheus-ferrero.jpeg" title="reviewer picture" alt="second profile picture" width="100px" height="100px">
-                    <h2 title="reviewer name">jane doe</h2>
+            
+            <div class="mySlides fade"> 
+                <div class="card">
+                    <div class="profile">
+                        <img src="/images/cool-profile-pic-matheus-ferrero.jpeg" title="reviewer picture" alt="second profile picture" width="100px" height="100px">
+                        <h2 title="reviewer name">jane doe</h2>
+                    </div>
+                    <i title="Rating">&#9733 &#9733 &#9733 &#9733 &#9734</i>
+                    <p title="the-review">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Hic harum, ea minima, error distinctio eum sit inventore 
+                        iusto facere quo vel culpa quia itaque non. Ullam cum fugiat possimus nihil.
+                    </p>
                 </div>
-                <i title="Rating">&#9733 &#9733 &#9733 &#9733 &#9734</i>
-                <p title="the-review">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Hic harum, ea minima, error distinctio eum sit inventore 
-                    iusto facere quo vel culpa quia itaque non. Ullam cum fugiat possimus nihil.
-                </p>
             </div>
-            <div class="card">
-                <div class="profile">
-                    <img src="/images/istockphoto-1309328823-170667a.jpg" title="reviewer picture" alt="third profile picture" width="100px" height="100px" >
-                    <h2 title="reviewer name">steve</h2>
+            
+            <div class="mySlides fade">
+                <div class="card">
+                    <div class="profile">
+                        <img src="/images/istockphoto-1309328823-170667a.jpg" title="reviewer picture" alt="third profile picture" width="100px" height="100px" >
+                        <h2 title="reviewer name">steve</h2>
+                    </div>
+                    <div title="Rating"> &#9733 &#9733 &#9733 &#9733 &#9734 </div>
+                    <p title="the-review">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Dignissimos culpa aliquam ad et quidem, nemo provident, 
+                        reiciendis veritatis id modi adipisci velit labore corporis 
+                        dicta obcaecati quo sequi voluptas quos!
+                    </p>
                 </div>
-                <div title="Rating"> &#9733 &#9733 &#9733 &#9733 &#9734 </div>
-                <p title="the-review">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Dignissimos culpa aliquam ad et quidem, nemo provident, 
-                    reiciendis veritatis id modi adipisci velit labore corporis 
-                    dicta obcaecati quo sequi voluptas quos!
-                </p>
             </div>
-            <button class="pointer">Next</button>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            
     </main>
+    
     <footer>
         <div class="container">
             <div class="logo">
@@ -87,5 +106,7 @@
             </div>
         </div>
     </footer>
+    <script src="home.js"></script>
+    <script src="gallery.js"></script>
 </body>
 </html>
