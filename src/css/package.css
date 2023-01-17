@@ -127,6 +127,9 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  .card{
+    width: 90%;
+  }
   footer .container {
     flex-direction: column;
   }
