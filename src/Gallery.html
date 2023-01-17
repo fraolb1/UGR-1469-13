@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/css/gallery.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,10 @@
     <header>
         <div class="container">
             <div class="logo" >
-                <img src="/images/logo_file_06.jpg" title="our logo" alt="man traveling" width="150px" height="100px">
+                <img src="/images/logo_file_06.jpg" title="our logo" alt="man traveling" width="100px" height="100px">
             </div>
             <nav class="navigation-bar">
-                <ul>
+                <ul class="nav-links">
                     <li title="home-page"> <a href="/home.html">Home</a> </li>
                     <li title="book-page"><a href="/book.html">Book</a></li>
                     <li title="package-page"><a href="/package.html">Package</a></li>
@@ -23,17 +24,39 @@
                     <li title="about-page"><a href="/About-us.html">About Us</a></li>
                 </ul>
             </nav>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>  
     </header>
    <main>
-    <div class="container">
-        <h1>Photos of top visited city</h1>
-        <button title="Previous picture">Prev</button>
-        <img src="/images/images (5).jpeg" alt="Venice city"  width="300px">
-        <img src="/images/images (4).jpeg" alt="paris city"  width="300px">
-        <img src="/images/images (7).jpeg" alt="rome city"  width="300px">
-        <button title="Next picture">Next</button>
-    </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="/images/images (5).jpeg" alt="Venice city" style="width:100%">
+              <div class="text">Venice</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="/images/images (4).jpeg" alt="paris city" style="width:100%">
+              <div class="text">Paris</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="/images/images (7).jpeg" alt="rome city" style="width:100%">
+              <div class="text">Rome</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+    
    </main> 
    <footer>
     <div class="container">
@@ -52,6 +75,8 @@
             </ul>
         </div>
     </div>
-</footer>
+    </footer>
+    <script src="home.js"></script>
+    <script src="gallery.js"></script>
 </body>
 </html>
