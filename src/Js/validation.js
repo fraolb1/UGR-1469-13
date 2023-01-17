@@ -1,9 +1,9 @@
 function validate(e) {
   e.preventDefault();
   if (
-    document.myForm.Name.value != "" ||
-    document.myForm.Number.value != "" ||
-    document.myForm.Duration.value != "" ||
+    document.myForm.Name.value != "" &&
+    document.myForm.Number.value != "" &&
+    document.myForm.Duration.value != "" &&
     document.myForm.Email.value != ""
   ) {
     alert("success");
