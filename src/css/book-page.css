@@ -59,7 +59,7 @@ ul li:nth-child(2) {
 }
 main {
   min-height: 69vh;
-  background-image: url(images/adventure-g819d5e6b5_640.jpg);
+  background-image: url(../images/adventure-g819d5e6b5_640.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
