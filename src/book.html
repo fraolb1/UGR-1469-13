@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../css/book-page.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,39 +9,52 @@
 </head>
 <body>
     <header>
-        <header>
-            <div class="container">
-                <div class="logo" >
-                    <img src="/images/logo_file_06.jpg" title="our logo" alt="man traveling" width="100px" height="100px">
-                </div>
-                <nav class="navigation-bar">
-                    <ul>
-                        <li title="home-page"> <a href="/home.html">Home</a> </li>
-                        <li title="book-page"><a href="/book.html">Book</a></li>
-                        <li title="package-page"><a href="/package.html">Package</a></li>
-                        <li title="gallery-page"><a href="/Gallery.html">Gallery</a></li>
-                        <li title="review-page"><a href="/review.html">Review</a></li>
-                        <li title="contact-page"><a href="/contact.html">Contact Us</a></li>
-                        <li title="about-page"><a href="/About-us.html">About Us</a></li>
-                    </ul>
-                </nav>
-            </div>  
-        </header>
+        <div class="container">
+            <div class="logo" >
+                <img src="/images/logo_file_06.jpg" title="our logo" alt="man traveling" width="100px" height="100px">
+            </div>
+            <nav class="navigation-bar">
+                <ul class="nav-links">
+                    <li title="home-page"> <a href="/home.html">Home</a> </li>
+                    <li title="book-page"><a href="/book.html">Book</a></li>
+                    <li title="package-page"><a href="/package.html">Package</a></li>
+                    <li title="gallery-page"><a href="/Gallery.html">Gallery</a></li>
+                    <li title="review-page"><a href="/review.html">Review</a></li>
+                    <li title="contact-page"><a href="/contact.html">Contact Us</a></li>
+                    <li title="about-page"><a href="/About-us.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>  
+    </header>
 
     <main>
         <div class="container">
             <h1>Fill the following form</h1>
-            <form action="">
-                <label for="PlaceToVisit">Place to Visit</label>
-                <input title="fill the place you want to visit here" type="text" id="PlaceToVisit">
-                <label for="NumberOfPeople">Number of People</label>
-                <input title="fill how many people are gonna be there here" type="text" id="NumberOfPeople">
-                <label for="DurationOfVisit">Duration</label>
-                <input title="fill for how long are you gonna visit" type="text" id="DurationOfVisit">
-                <label for="Email">Email Address</label>
-                <input title="fill your email address here" type="text" id="Email">
+            <form name="myForm" action="">
+                <div class="label">
+                    <label for="PlaceToVisit">Place to Visit</label>
+                    <input name="Name" title="fill the place you want to visit here" type="text" id="PlaceToVisit">
+                </div>
+                <div class="label">
+                    <label for="NumberOfPeople">Number of People</label>
+                    <input name="Number" title="fill how many people are gonna be there here" type="text" id="NumberOfPeople">
+                </div>
+                <div class="label">
+                    <label for="DurationOfVisit">Duration</label>
+                    <input name="Duration"  title="fill for how long are you gonna visit" type="text" id="DurationOfVisit" placeholder="ex: 15-1-2023 to 1-2-2023">
+                </div>
+                <div class="label">
+                    <label for="Email">Email Address</label>
+                    <input name="Email" title="fill your email address here" type="text" id="Email">
+                </div>
+                <button class="submite-btn" title="submite">Submite</button>
             </form>
-            <button title="submite">Submite</button>
+            
         </div>
         
     </main>
@@ -60,5 +74,7 @@
             </div>
         </div>
     </footer>
+    <script src="home.js"></script>
+    <script src="validation.js"></script>
 </body>
 </html>
