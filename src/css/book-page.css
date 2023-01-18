@@ -132,6 +132,9 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  .main .container{
+    width:90%;
+  }
   footer .container {
     flex-direction: column;
   }
