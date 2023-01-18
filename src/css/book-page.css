@@ -132,7 +132,7 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  .main .container{
+  main .container{
     width:90%;
   }
   footer .container {
